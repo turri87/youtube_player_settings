@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PfP Tests</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>YouTube Player Settings</h2>
+      <div class="embed-responsive">
+        <div id="playerVars"></div>
+      </div>
+      <div >
+        <button class="button" id="buttonApply" type="button">Apply Changes</button> 
+        <button class="button" id="buttonReset" type="button">Reset Changes</button> </br>
+        <input class="box" style="width:100px" type="text" id="videoIdInput"> <label class="text">video ID</label></br>
+        <input class="box" style="width:100px" type="text" id="startInput"> <label class="text">where to start video from (seconds) (start)</label></br>
+        <input class="box" style="width:100px" type="text" id="endInput"> <label class="text">where to end video at (seconds)(end)</label></br>
+        <input class="box" style="width:200px" type="text" id="playlistInput"> <label class="text">a comma-separated list of video IDs to play (playlist)</label></br>
+        <input class="box" style="width:200px" type="text" id="widgetRefererInput"> <label class="text">URL where the player is embedded (Widget Referer)</label></br>
+        <input type="checkbox" id="autoplayTick"> <label class="text">start playback automatically on load (autoplay)</label></br>
+        <input type="checkbox" id="muteTick"> <label class="text">mute audio</label></br>
+        <input type="checkbox" id="loopTick"> <label class="text">loop video (loop)</label></br>
+        <input type="checkbox" id="relTick"> <label class="text">no show related videos at end (rel)</label></br>
+        <input type="checkbox" id="playsInlineTick"> <label class="text">play video inline on iOS (playsinline)</label></br>
+        <input type="checkbox" id="modestbrandingTick"> <label class="text">remove YouTube logo from control bar (modestbranding)</label></br>
+        <input type="checkbox" id="enablejsapiTick"> <label class="text">allow video to be controlled by the iframe api (enablejsapi)</label></br>
+        <input type="checkbox" id="fsTick"> <label class="text">disable fullscreen button (fs)</label></br>
+        <input type="checkbox" id="disablekbTick"> <label class="text">disable keyboard controls (disablekb)</label></br>   
+        <input type="checkbox" id="controlsTick"> <label class="text">disable video controls (controls)</label></br> 
+        <input type="checkbox" id="ccLoadPolicyTick"> <label class="text">hide closed captions (cc_load_policy)</label></br> 
+        <input type="checkbox" id="ivLoadPolicyTick"> <label class="text">hide annotations (iv_load_policy)</label></br> 
+        <select id="colorSelector">
+          <option value=""></option>
+          <option value="red">Red</option>
+          <option value="white">White</option>
+        </select> <label class="text">colour of the progress bar (color)</label></br>          
+        <h5>IFrame API configuration:</h5>
+        <div class="iframeTag">
+          <pre id="printAreaAPI"></pre>
+        </div>
+        <h5>IFrame tag:</h5>
+        <div class="iframeTag">
+          <pre id="printAreaIframe"></pre>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/params.js"></script>
+  </body>
+</html>
